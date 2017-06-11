@@ -16,10 +16,9 @@ export class App extends ApplicationBase {
     
     constructor() {
         super('Fleet Manager');
-        
         this.dataService = new FleetDataService();
         this.dataService.loadData(fleet);
-        
+         
         this.addRoute('Home', new HomePage(), true);
         this.addRoute('Cars', new CarsPage());
         //this.addRoute('Drones', 'drones');
